@@ -1,0 +1,32 @@
+nav {
+  display: flex;
+  height: max-content;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 3rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px
+}
+
+.nav-btn {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  font-size: large;
+}
+
+.nav-home {
+  cursor: pointer;
+}
+
+.nav-search-container {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-profile, .nav-cert {
+  position: relative;
+  cursor: pointer;
+}

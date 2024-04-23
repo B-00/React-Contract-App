@@ -1,0 +1,62 @@
+.profile-dropdown {
+  position: absolute;
+  right: -0.01rem;
+  top: 4.5rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px var(--border-radius);
+  cursor: default;
+  transition: var(--speed) ease;
+}
+
+.profile-dropdown::before{
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  right: 1rem;
+  height: 1rem;
+  width: 1rem;
+  background: inherit;
+  transform: rotate(225deg);
+}
+
+.profile-list {
+  list-style-type: none;
+  height: max-content;
+  width: 12rem;
+}
+
+.profile-item {
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 1rem 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.profile-item a {
+  width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  transition: var(--speed);
+}
+
+.profile-item a > img {
+  max-width: 1rem;
+  opacity: 0.5;
+  margin-right: 1rem;
+  transition: var(--speed);
+}
+
+.profile-item a:hover {
+  color: rgb(0, 191, 255);
+}
+
+.profile-item a:hover img {
+  opacity: 1;
+  cursor: pointer;
+}
