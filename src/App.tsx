@@ -9,6 +9,7 @@ import Logout from './components/Pages/Logout'
 import Inbox from './components/Misc/Inbox'
 import UploadCert from './components/NavBar/UploadCert'
 import Contracts from './components/Pages/Contracts'
+import Footer from './components/Misc/Footer'
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/help' element={<Help/>}/>
         <Route path='/logout' element={<Logout/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }
