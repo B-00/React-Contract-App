@@ -3,6 +3,7 @@ import inbox from '../../../src/img/envelope.png';
 import settings from '../../../src/img/settings.png';
 import help from '../../../src/img/question.png';
 import logout from '../../../src/img/log-out.png';
+import { NavLink } from 'react-router-dom';
 import './ProfileDropDown.css'
 
 export type ProfileDropDown = {
@@ -22,11 +23,11 @@ export default function ProfileDropDown({isToggled, isLogged, setLogged}: Profil
 function LoggedList({setLogged}: ProfileDropDown) {
   return (
     <ul className="profile-list">
-      <li className="profile-item"><a href='/profile'><img src={user}/>Profile</a></li>
-      <li className="profile-item"><a href='/inbox'><img src={inbox}/>Inbox</a></li>
-      <li className="profile-item"><a href='/settings'><img src={settings}/>Settings</a></li>
-      <li className="profile-item"><a href='/help'><img src={help}/>Help</a></li>
-      <li className="profile-item"><a href='/logout' onClick={() => setLogged(false)}><img src={logout}/>Logout</a></li>
+      <li className="profile-item"><NavLink to='/profile'><img loading={'eager'} src={user}/>Profile</NavLink></li>
+      <li className="profile-item"><NavLink to='/inbox'><img loading={'eager'} src={inbox}/>Inbox</NavLink></li>
+      <li className="profile-item"><NavLink to='/settings'><img loading={'eager'} src={settings}/>Settings</NavLink></li>
+      <li className="profile-item"><NavLink to='/help'><img loading={'eager'} src={help}/>Help</NavLink></li>
+      <li className="profile-item"><NavLink to='/logout' onClick={() => setLogged(false)}><img loading={'eager'} src={logout}/>Logout</NavLink></li>
     </ul>
   )
 }
@@ -34,7 +35,7 @@ function LoggedList({setLogged}: ProfileDropDown) {
 function NotLoggedList({setLogged}: ProfileDropDown) {
   return (
     <ul className="profile-list">
-      <li className="profile-item"><a onClick={() => setLogged(true)}><img style={{transform: 'rotate(180deg)'}}src={logout}/>Login</a></li>
+      <li className="profile-item"><a onClick={() => setLogged(true)}><img loading={'eager'} style={{transform: 'rotate(180deg)'}} src={logout}/>Login</a></li>
     </ul>
   )
 }

@@ -18,8 +18,8 @@ const contractData = [
       codeNumber: 693
     },
     {
-      fullName: 'Alice Johnson',
-      experience: 25,
+      fullName: 'Bob Brown',
+      experience: 21,
       contractType: 'D',
       uploadDate: '2023-05-20',
       timeFrame: 7,

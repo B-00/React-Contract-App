@@ -30,7 +30,7 @@ export default function NavBar() {
   
   return (
     <nav>
-      <div className="logo">
+      <div className="logo" onClick={() => nav('/')}>
         <img src="https://phascorp.com/wp-content/uploads/2023/06/main-logo-3.png" alt="logo" height="70rem" />
       </div>
       <div className="nav-home" onClick={() => nav('/')}>
