@@ -8,14 +8,7 @@ nav {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px
 }
 
-.nav-btn {
-  border: none;
-  cursor: pointer;
-  background-color: inherit;
-  font-size: large;
-}
-
-.nav-home {
+nav > div {
   cursor: pointer;
 }
 
@@ -28,5 +21,4 @@ nav {
 
 .nav-profile, .nav-cert {
   position: relative;
-  cursor: pointer;
 }

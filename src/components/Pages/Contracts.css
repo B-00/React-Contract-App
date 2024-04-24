@@ -1,0 +1,13 @@
+.contract-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contract-list {
+  background-color: darkgray;
+  text-align: center;
+  width: max-content;
+  height: min-content;
+  list-style: none;
+}

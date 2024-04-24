@@ -7,6 +7,8 @@ import Settings from './components/Misc/Settings'
 import Help from './components/Misc/Help'
 import Logout from './components/Pages/Logout'
 import Inbox from './components/Misc/Inbox'
+import UploadCert from './components/NavBar/UploadCert'
+import Contracts from './components/Pages/Contracts'
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
+        <Route path='/cert' element={<UploadCert/>}/>
+        <Route path='/contracts' element={<Contracts/>}/>
         <Route path='/profile' element={<Profile/>}/>
         <Route path='/inbox' element={<Inbox/>}/>
         <Route path='/settings' element={<Settings/>}/>
