@@ -3,13 +3,14 @@ nav {
   height: max-content;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 3rem;
+  padding: 0px 2rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px
 }
 
-nav > div {
+nav div {
   cursor: pointer;
+  margin: 0 1rem;
 }
 
 .nav-search-container {

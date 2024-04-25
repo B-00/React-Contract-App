@@ -8,7 +8,7 @@ import Help from './components/Misc/Help'
 import Logout from './components/Pages/Logout'
 import Inbox from './components/Misc/Inbox'
 import UploadCert from './components/NavBar/UploadCert'
-import Contracts from './components/Pages/Contracts'
+import Contracts from './components/NavBar/Contracts'
 import Footer from './components/Misc/Footer'
 
 function App() {

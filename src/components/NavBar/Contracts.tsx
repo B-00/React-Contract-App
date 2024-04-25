@@ -11,8 +11,6 @@ type ContractData = {
   codeNumber: number;
 };
 
-//type ContractDataType = ContractData[];
-
 export default function Contracts() {
 
   function dateFormatter(dateStr: string) {
@@ -27,7 +25,6 @@ export default function Contracts() {
   function typeColor(type: string) {
     const styleObj = {
       backgroundColor: '',
-      borderRadius: '2rem'
     }
     const alphaVal = 0.5
 
